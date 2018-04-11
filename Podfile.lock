@@ -1,0 +1,32 @@
+PODS:
+  - CaptainHook (2.0.0)
+  - DingDingPod (1.1.0)
+  - DingDingRevokeMessagePod (1.0.3)
+  - DingtalkPod (1.0.2):
+    - CaptainHook
+  - MDSettingCenter (1.1.0)
+
+DEPENDENCIES:
+  - DingDingPod
+  - DingDingRevokeMessagePod
+  - DingtalkPod
+  - MDSettingCenter
+
+SPEC REPOS:
+  https://github.com/AloneMonkey/MonkeyDevSpecs.git:
+    - CaptainHook
+    - DingDingPod
+    - DingDingRevokeMessagePod
+    - DingtalkPod
+    - MDSettingCenter
+
+SPEC CHECKSUMS:
+  CaptainHook: 3889d18beaf6a87b19c9bb47f5c8348a0b275036
+  DingDingPod: 27adcb9197d1ddb910ebe8a06bd0dd032bd388bf
+  DingDingRevokeMessagePod: 0094be80139429b2bdc2479085d30e684db68c7c
+  DingtalkPod: 8a629715e388c8868556a4739763f0832c149707
+  MDSettingCenter: 41b910206cd1d826e11247413cd48a068d38e274
+
+PODFILE CHECKSUM: 86ba60b84edab625a5f7de75dbf9d3cb3e277167
+
+COCOAPODS: 1.5.0

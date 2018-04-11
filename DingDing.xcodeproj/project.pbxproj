@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BACD4B7470CC7CECD1CCA78 /* Pods_DingDingDylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583DA885F5B2A99619248C1E /* Pods_DingDingDylib.framework */; };
 		C67A26B6207E0ABE00B19A90 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C67A26B5207E0ABE00B19A90 /* MethodTraceConfig.plist */; };
 		C67A26C0207E0ABE00B19A90 /* libDingDingDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = C67A26BF207E0ABE00B19A90 /* libDingDingDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		C67A26C5207E0ABE00B19A90 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67A26C4207E0ABE00B19A90 /* JavaScriptCore.framework */; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		583DA885F5B2A99619248C1E /* Pods_DingDingDylib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DingDingDylib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67A26AD207E0ABE00B19A90 /* DingDing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DingDing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67A26B0207E0ABE00B19A90 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		C67A26B1207E0ABE00B19A90 /* Target.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Target.plist; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 		C67A26E5207E0ABE00B19A90 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
 		C67A26E7207E0ABE00B19A90 /* DingDingDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingDingDylib.h; sourceTree = "<group>"; };
 		C67A26E9207E0ABE00B19A90 /* DingDingDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingDingDylib.m; sourceTree = "<group>"; };
+		EDD30BA3481EEA99182E74A7 /* Pods-DingDingDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DingDingDylib.release.xcconfig"; path = "Pods/Target Support Files/Pods-DingDingDylib/Pods-DingDingDylib.release.xcconfig"; sourceTree = "<group>"; };
+		F8927346937D9DC4D9F516AF /* Pods-DingDingDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DingDingDylib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DingDingDylib/Pods-DingDingDylib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +96,22 @@
 				C67A26C5207E0ABE00B19A90 /* JavaScriptCore.framework in Frameworks */,
 				C67A26C9207E0ABE00B19A90 /* UIKit.framework in Frameworks */,
 				C67A26C7207E0ABE00B19A90 /* Foundation.framework in Frameworks */,
+				7BACD4B7470CC7CECD1CCA78 /* Pods_DingDingDylib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44C75EE47756F52CBB37CA40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8927346937D9DC4D9F516AF /* Pods-DingDingDylib.debug.xcconfig */,
+				EDD30BA3481EEA99182E74A7 /* Pods-DingDingDylib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C67A26A1207E0ABD00B19A90 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +119,7 @@
 				C67A26CA207E0ABE00B19A90 /* DingDingDylib */,
 				C67A26C3207E0ABE00B19A90 /* Frameworks */,
 				C67A26AE207E0ABE00B19A90 /* Products */,
+				44C75EE47756F52CBB37CA40 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +175,7 @@
 				C67A26C4207E0ABE00B19A90 /* JavaScriptCore.framework */,
 				C67A26C6207E0ABE00B19A90 /* Foundation.framework */,
 				C67A26C8207E0ABE00B19A90 /* UIKit.framework */,
+				583DA885F5B2A99619248C1E /* Pods_DingDingDylib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C67A26ED207E0ABE00B19A90 /* Build configuration list for PBXNativeTarget "DingDingDylib" */;
 			buildPhases = (
+				DC05B4594BDE285E284F282D /* [CP] Check Pods Manifest.lock */,
 				C67A26BA207E0ABE00B19A90 /* ShellScript */,
 				C67A26BB207E0ABE00B19A90 /* Sources */,
 				C67A26BC207E0ABE00B19A90 /* Frameworks */,
@@ -375,6 +392,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		DC05B4594BDE285E284F282D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DingDingDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -523,6 +558,7 @@
 		};
 		C67A26EE207E0ABE00B19A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8927346937D9DC4D9F516AF /* Pods-DingDingDylib.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HG8SBJDJPT;
@@ -549,10 +585,7 @@
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
 				INSTALL_PATH = "@executable_path/Frameworks/libDingDingDylib.dylib";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(MonkeyDevPath)/Frameworks",
@@ -586,6 +619,7 @@
 		};
 		C67A26EF207E0ABE00B19A90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDD30BA3481EEA99182E74A7 /* Pods-DingDingDylib.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
@@ -613,10 +647,7 @@
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
 				INSTALL_PATH = "@executable_path/Frameworks/libDingDingDylib.dylib";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(MonkeyDevPath)/Frameworks",

@@ -524,7 +524,8 @@
 		C67A26EE207E0ABE00B19A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HG8SBJDJPT;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -577,6 +578,7 @@
 					RevealServer,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
 			};
@@ -585,8 +587,10 @@
 		C67A26EF207E0ABE00B19A90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = HG8SBJDJPT;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -634,6 +638,7 @@
 					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -641,7 +646,8 @@
 		C67A26F1207E0ABE00B19A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HG8SBJDJPT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DingDing/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
@@ -653,6 +659,8 @@
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.caver.DingDing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "655451b2-13bf-4b49-8f03-79a393e77aa5";
+				PROVISIONING_PROFILE_SPECIFIER = "Caver wildcard Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -660,7 +668,9 @@
 		C67A26F2207E0ABE00B19A90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HG8SBJDJPT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DingDing/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
@@ -672,6 +682,8 @@
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.caver.DingDing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "706b825f-3209-463e-8656-efc6abec4fb4";
+				PROVISIONING_PROFILE_SPECIFIER = "Caver AC-Hoc";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
